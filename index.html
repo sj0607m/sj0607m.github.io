@@ -7,6 +7,26 @@
      crossorigin="anonymous"></script>
 </head>
 <body>
+  <script>
+
+      var player;
+
+      function onYoutubeIframeApiReady(){
+          player = new YT.Player('player', {
+              width : '640',
+              height : '360',
+              videoId : 'M7Ic1UVf-VE',
+              events : {
+                  'onReady' : onPlayerReady,
+                  'onStateChange' : onPlayerStateChange
+              }
+          });
+      }
+  </script>
+
+  <iframe src="page.html" width="300" height="300">
+      iframe을 지원하지 않는 브라우저입니다.
+  </iframe>
   <h1>환영합니다!</h1>
   <p id="greeting"></p>
 
