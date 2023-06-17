@@ -1,0 +1,14 @@
+#guestbook-form {
+    margin-bottom: 20px;
+  }
+  
+  #guestbook-entries {
+    margin-top: 20px;
+  }
+  
+  .guestbook-entry {
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
