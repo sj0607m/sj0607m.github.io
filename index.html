@@ -1,29 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>내 개인 웹페이지</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <script src="script.js"></script>
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1789879834755539"
-     crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/script.js" defer></script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1789879834755539" crossorigin="anonymous"></script>
 </head>
 <body>
-  <h1>방명록</h1>
+  <header>
+    <h1>방명록</h1>
+  </header>
   
-  <form id="guestbook-form">
-    <input type="text" id="name-input" placeholder="이름" required>
-    <textarea id="message-input" placeholder="메시지" required></textarea>
-    <button type="submit">전송</button>
-  </form>
-  
-  <div id="guestbook-entries"></div>
-  
-  <script src="script2.js"></script>
-  
-  <!--<iframe width="720" height="380" src="https://www.youtube.com/embed/pyf8cbqyfPs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
-  <h1>환영합니다!</h1>
-  <p id="greeting"></p>
-
-  <button onclick="sayHello()">인사하기</button>
+  <main>
+    <form id="guestbook-form">
+      <input type="text" id="name-input" placeholder="이름" required>
+      <textarea id="message-input" placeholder="메시지" required></textarea>
+      <button type="submit">전송</button>
+    </form>
+    
+    <div id="guestbook-entries"></div>
+    
+    <section>
+      <h1>환영합니다!</h1>
+      <p id="greeting"></p>
+      <button onclick="sayHello()">인사하기</button>
+    </section>
+  </main>
 </body>
 </html>
