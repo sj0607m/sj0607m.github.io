@@ -1,32 +1,27 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>내 개인 웹페이지</title>
-  <link rel="stylesheet" href="assets/style.css">
-  <script src="assets/script.js" defer></script>
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1789879834755539" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notion Clone</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>방명록</h1>
-  </header>
-  
-  <main>
-    <form id="guestbook-form">
-      <input type="text" id="name-input" placeholder="이름" required>
-      <textarea id="message-input" placeholder="메시지" required></textarea>
-      <button type="submit">전송</button>
-    </form>
-    
-    <div id="guestbook-entries"></div>
-    
-    <section>
-      <h1>환영합니다!</h1>
-      <p id="greeting"></p>
-      <button onclick="sayHello()">인사하기</button>
-    </section>
-  </main>
+    <div class="container">
+        <header>
+            <h1>My Notion Clone</h1>
+        </header>
+        <main>
+            <div class="block">
+                <h2>Heading Block</h2>
+                <p>This is a paragraph block. You can add more text here.</p>
+            </div>
+            <div class="block">
+                <h2>Another Heading</h2>
+                <p>Another paragraph block with some text.</p>
+            </div>
+        </main>
+    </div>
+    <script src="scripts.js"></script>
 </body>
 </html>
